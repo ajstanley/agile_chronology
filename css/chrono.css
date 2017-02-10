@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	background-color: #aaa;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	outline: none;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px 0;
+}
+input {
+	vertical-align: middle;
+}
+
+/* end reset */
+
+#wrapper {
+	min-width: 830px;
+	max-width: 830px;
+	margin: 0 auto;
+	border-left: 2px gray solid;
+	border-right: 2px gray solid;
+	border-bottom: 2px gray solid;
+	background-color: #eee;
+}
+
+
+h2 img {
+	margin: 0;
+	padding: 0;
+}
+
+/* style for timeline */
+
+#timeline {
+	margin: 0;
+        margin-top: 20px;
+	padding: 0;
+	height: 90px; 
+	width: 830px;
+	}
+
+#tl-centuries {
+	display: block;
+	float: left;
+}
+
+#tl-centuries h2 {
+	height: 20px;
+}
+
+#tl-decades {
+	display: block;
+	float: left;
+	width: 680px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+#tl-decades h2 {
+	display: inline;
+	width: 82px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+#tl-decades #d1880h2 {
+	margin-left: 64px;
+}
+
+#tl-decades #d2020h2 {
+	margin-left: 38px;
+}
+
+#tl-bars {
+	display: block;
+	float: left;
+	width: 680px;
+	margin: 0;
+	padding: 0;
+}
+
+#tl-date {
+	display: block;
+	float: right;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+#timeline h1 {
+	padding: 30px 0 0 0;
+	margin: 0;
+}
+
+/* style for middle content */
+
+#middle {
+	width: 100%;
+	height: 1%;
+	position: relative;
+}
+
+#middle:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+#content {
+	margin: 0 0 0 150px;
+	padding: 0 0 0 0;
+	min-height: 370px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	background-color: #ddd;
+}
+
+#subhead {
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+/*
+#subhead h1#print-h1 {
+	display: none;
+}
+
+reinstate if chronology heading does not remain
+
+*/ 
+
+#subhead h1 {
+	margin: 10px 0;
+    font-family: "Trebuchet MS",Arial,Verdana,Helvetica,sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;	
+}
+
+#subhead h1 img {
+	vertical-align: bottom;
+	margin: 0 20px;
+}
+
+#subhead h1.toph1 {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #222;
+}
+
+#subhead h2 {
+	font-size: 1.2em;
+}
+
+#main {
+	clear: both;
+	padding: 0 20px;
+	min-height: 200px;
+}
+
+#main span.illustration {
+	float: right;
+	margin: 10px;
+	padding: 2px;
+	border: 1px #666 solid;
+	font-size: 0.9em;
+	color: #666;
+}
+
+#main h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#main p {
+	padding: 0;
+	margin: 10px 0;
+}
+
+#main p a {
+	font-weight: normal;
+}
+
+#main img {
+	margin: 10px;
+	border: 1px solid #666;
+}
+
+#main ul li {
+	list-style: square;
+	margin-left: 20px;
+}
+
+#main #back-fwd {
+	clear: both;
+	text-align: center;
+}
+
+#main #back-fwd img {
+	margin: 0 10px;
+}
+
+#subfoot {
+	clear: both;
+	margin: 0 20px;
+	padding: 10px 0;
+	border-top: 1px #333 dotted;
+	overflow: hidden;
+}
+
+#subfoot p {
+	padding: 10px 0 0 0;
+	margin-bottom: 0;
+}
+
+#subfoot ul {
+	display: block;
+	width: 300px;
+}
+
+#subfoot ul li {
+	vertical-align: middle;
+	padding: 4px 0;
+}
+
+#subfoot ul#chrono-links {
+	float: left;
+}
+
+#subfoot ul#chrono-links li {
+	list-style-type: square;
+	list-style-position: outside;
+	margin-left: 15px;
+	padding-left: 0px;
+}
+
+#subfoot ul#feature-links {
+	float: right;
+	list-style-type: default;
+	list-style-image: none;
+}
+
+#subfoot ul li#keyplay {
+	background: url(../imgs/book_icon.gif) no-repeat 7px 7px;
+	padding-left: 34px;
+	margin-left: 4px;
+	}
+
+#subfoot ul li#headline {
+	background: url(../imgs/newsicon2.gif) no-repeat 7px 7px;
+	padding-left: 38px;
+	margin: 0;
+}
+
+#subfoot ul li#news {
+	background: url(../imgs/newsicon.gif) no-repeat 7px 7px;
+	padding-left: 38px;
+	margin: 0;
+}
+
+/* style for leftnav */
+
+#leftnav {
+	clear: left;
+	clear: right;
+	display: block;
+	float: left;
+	width: 150px;
+	margin-left: -100%;
+	position: relative;
+	text-align: center;
+}
+
+#decade_img {
+	margin-left: 0 0 0 10px;
+}
+
+#leftnav input[type=text] {
+	background-color: #fff;
+	height: 16px;
+	width: 80px;
+	padding: 0;
+	margin: 0;
+}
+
+#leftnav input[type=submit]
+{
+	border: 1px #333 solid;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #aaa;
+	height: 20px;
+	padding: 0 3px;
+	margin: 0 0 0 2px;
+}
+
+#leftnav a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #366;
+}
+
+#leftnav a:hover {
+	color: #699;
+}
+
+#leftnav p {
+	margin-bottom: 0;
+}
+
+#leftnav ol {
+	margin: 0 10px 10px;
+	padding: 0 0 10px 0;
+	border-bottom: 3px #033 double;
+}
+
+#leftnav li {
+	display: inline;
+	border-left: 1px #333 solid;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+#leftnav li:first-child {
+	border-left: none;
+}
+
+#leftnav hr {
+	height: 1px;
+	margin: 10px 10px 10px 10px;
+	border-top: 1px solid #033;
+	border-bottom: 1px solid #033;
+}
+
+#footer {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#footer p {
+	display: none;
+}

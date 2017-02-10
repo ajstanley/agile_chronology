@@ -1,0 +1,70 @@
+h3
+{
+	color: #111111;
+}
+
+h5
+{
+	color: #114444;
+}
+
+.heading
+{
+	color: #114444;
+}
+
+.small
+{
+	color: #336666;
+}
+
+a:link
+{
+	color: #336666;
+}
+
+a:visited
+{
+	color: #77aaaa;
+}
+
+a:hover
+{
+	color: #558888;
+}
+
+a.nav:link
+{
+	color: #992222;
+}
+
+a.nav:visited
+{
+	color: #cc4444;
+}
+
+a.nav:hover
+{
+	color: #cc5555;
+}
+
+a.west:link
+{
+	color: #333388;
+}
+
+a.west:visited
+{
+	color: #6666aa;
+}
+
+a.west:hover
+{
+	color: #6666aa;
+}
+
+a.global:link
+{
+	color: #336666;
+}
+

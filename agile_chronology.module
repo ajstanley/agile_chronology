@@ -1,0 +1,98 @@
+<?php
+
+define('EARLIEST', 1865);
+define('EARLIEST_NEWS', '1860');
+define('BEGIN_YEAR', '1864');
+define('PLACEHOLDER_IMAGE_NAME', 'imgs/placeholder.jpg');
+define('PLACEHOLDER_IMAGE_SIZE', 'width="100" height="100" ');
+define('CTR_WEBSITE', "http://canadiantheatrerecord.torontopubliclibrary.ca/");  // http://ctr.tpl.toronto.on.ca/
+define('DEV', 4);
+define('STAGING', 5);
+define('LIVE', 6);
+
+
+
+
+define('CAN_TABLE', "live_can");
+define('WEST_TABLE', "live_west");
+define('INDEX_TABLE', "live_map");
+define('TERMS_TABLE', "live_terms");
+define('CONTEXT_TABLE', "live_context");
+define('CONTEXT_ORDER_TABLE', "live_contextorder");
+define('REC_IMAGE_ALT', "live_recordimagealt");
+define('KEY_PLAY_TABLE', 'live_keyplays');
+define('KEY_PLAY_ORDER_TABLE', 'live_keyplayorder');
+define('SUPLEMENTAL_TABLE', 'live_sup_info'); // table containing general 'sup info
+define('SUPLEMENTAL_LINK_TABLE', 'live_sup_links'); // table containing link info
+define('SUPLEMENTAL_MAP_TABLE', 'live_sup_map'); // table containing index of terms to sup pages
+define('SUPLEMENTAL_LINK_ORDER', 'live_sup_link_order'); // the sorting order of links
+define('SUPLEMENTAL_IMAGE_ALT', 'live_sup_image_alt'); // alt text for images -- keyed to supID
+define('SUPLEMENTAL_LINK_TYPES', 'live_sup_link_types'); // types of links	
+define('SUPLEMENTAL_TERM_MAP_TABLE', 'live_sup_term_map'); // table containing index of terms to sup pages (secondary relationships)
+define('NEWS_TABLE', "news");  // expanded news
+define('AUTHORSHIP_TABLE', "live_authorship");  // authorship data
+define('AUTHORSHIP_LINK_TABLE', "live_authorship_link");  // authorship links to records
+
+/**
+ * Implements hook_menu().
+ */
+function agile_chronology_menu() {
+  $items = array();
+  $items['chrono'] = array(
+    'title' => 'Theater in Context',
+    'description' => 'A Critical Timeline',
+    'type' => MENU_NORMAL_ITEM,
+    'page callback' => 'agile_show_can',
+    'file' => 'includes/canadian.inc',
+    'access arguments' => array('access content'),
+  );
+  $items['chronowest'] = array(
+    'title' => 'Theater in Context',
+    'description' => 'A Critical Timeline',
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'agile_show_west',
+    'file' => 'includes/canadian.inc',
+    'access arguments' => array('access content'),
+  );
+  $items['agile/sup'] = array(
+    'title' => 'Supplemental',
+    'description' => 'A Critical Timeline',
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'show_sup',
+    'file' => 'includes/canadian.inc',
+    'access arguments' => array('access content'),
+  );
+  $items['agile/help'] = array(
+    'title' => 'Help',
+    'description' => 'A Critical Timeline Help Function',
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'agile_show_help',
+    'file' => 'includes/canadian.inc',
+    'access arguments' => array('access content'),
+  );
+  $items['agile/search'] = array(
+    'title' => 'Help',
+    'description' => 'A Critical Timeline Help Function',
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'agile_search',
+    'file' => 'includes/agile_search.inc',
+    'access arguments' => array('access content'),
+  );
+  $items['agile/newslist'] = array(
+    'title' => 'News List',
+    'description' => 'A Critical Timeline Help Function',
+    'type' => MENU_LOCAL_TASK,
+    'page callback' => 'agile_newslist',
+    'file' => 'includes/news_list.inc',
+    'access arguments' => array('access content'),
+  );
+  $items['admin/config/content/chronology'] = array(
+    'title' => 'Update Modern Theater in Context',
+    'page callback' => 'drupal_get_form',
+    'access arguments' => array('administer site configuration'),
+    'page arguments' => array('update_chronology_files_form'),
+    'file' => 'includes/file_updates.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}

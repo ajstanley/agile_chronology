@@ -1,0 +1,22 @@
+#timeline {
+    background: url(../imgs/tl_bg_cdn.gif) top left repeat-x;
+}
+
+#timeline h1 {
+    background: url(/sites/all/modules/agile_chronology/imgs/tl/tl_corner_cdn.gif);
+    background-repeat: no-repeat;
+}
+
+/* style for middle content */
+
+#content {
+    border: 3px solid #933;
+}
+
+#content a {
+    color: #933;
+}
+
+#subhead h1 {
+    color: #600;
+}

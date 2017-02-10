@@ -1,0 +1,49 @@
+#timeline {
+    background: url(../imgs/tl_bg_west.gif) top left repeat-x;
+}
+
+#timeline h1 {
+    background: url(/sites/all/modules/agile_chronology/imgs/tl/tl_corner_west.gif);
+    background-repeat: no-repeat;
+}
+
+/* style for middle content */
+
+#content {
+    border: 3px solid #669;
+}
+
+#content a {
+    color: #336;
+}
+
+#subhead h1 {
+    color: #336;
+}
+
+
+/* month navigator for west */
+
+#subhead ol {
+    display: block;
+    border: 1px black solid;
+    padding: 0px;
+    margin: 0 0 0 256px;
+    width: 160px;
+    text-align: center;
+}
+
+#subhead ol li {
+    display: inline;
+    margin: 0px;
+    padding: 2px 2px 2px 2px;
+}
+
+#subhead ol li#thismonth {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+#subfoot {
+    border-color: #336;
+}

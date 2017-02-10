@@ -1,0 +1,250 @@
+/* style for middle content of supplementary information and search pages */
+
+#content {
+	border: 3px solid #366;
+}
+
+#content a {
+	color: #366;
+}
+
+#subhead h1 {
+    color: #255;
+}
+
+#back-fwd {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+#main #back-btn {
+	display: block;
+	background: url(../imgs/g_left.gif) no-repeat 7px 7px;
+	padding: 7px 2px 7px 14px;
+	width: 60px;
+	margin-left: 280px;
+}
+
+#main #back-btn:hover {
+	background-image: url(../imgs/g_left_ovr.gif);
+}
+
+#subfoot {
+	border-color: #366;
+}
+
+/* chrono-links display with image icons, hide bullet */
+
+#subfoot ul#chrono-links li {
+	list-style-type: none;
+}
+
+/*  expanded news records */
+
+#main h2.art
+{
+	padding-left: 40px;
+	background-image: url(../news/imgs/art_icon_ovr.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#main h2.pol,
+#main h2.poli
+{
+	padding-left: 40px;
+	background-image: url(../news/imgs/pol_icon_ovr.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#main h2.sci
+{
+	padding-left: 40px;
+	background-image: url(../news/imgs/sci_icon_ovr.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#main h2.soc
+{
+	padding-left: 40px;
+	background-image: url(../news/imgs/soc_icon_ovr.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+ul#news_list {
+	margin: 0 20px;
+}
+
+ul#news_list li
+{
+	margin: 0 0 20px 40px;
+	padding: 0 0 0 40px;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+ul#news_list li.art {background-image: url(../news/imgs/art_icon_ovr.gif);}
+
+ul#news_list li.poli, ul#news_list li.pol {background-image: url(../news/imgs/pol_icon_ovr.gif);}
+
+ul#news_list li.sci {background-image: url(../news/imgs/sci_icon_ovr.gif);}
+
+ul#news_list li.soc {background-image: url(../news/imgs/soc_icon_ovr.gif);}
+
+ul#news_list li h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+ul#news_list li h3 {
+	font-size: 1.0em;
+}
+
+#subfoot #exp-news-links {
+	width: 630px;
+	margin: 0;
+	padding: 0;
+}
+
+#subfoot #exp-news-links li {
+	width: 164px;
+	height: 24px;
+	display: block;
+	float: left;
+	padding: 8px 0 0 40px;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#subfoot #exp-news-links li.art {
+	background-image: url(../news/imgs/art_icon_ovr.gif);
+}
+
+#subfoot #exp-news-links li.pol,
+#subfoot #exp-news-links li.poli {
+	background-image: url(../news/imgs/pol_icon_ovr.gif);
+}
+
+#subfoot #exp-news-links li.sci {
+	background-image: url(../news/imgs/sci_icon_ovr.gif);
+}
+
+#subfoot #exp-news-links li.soc {
+	background-image: url(../news/imgs/soc_icon_ovr.gif);
+}
+
+#subfoot #exp-news-links li h2 {
+	display: inline;
+}
+
+/* styles for search form and results */
+
+#main #keywords {
+	text-align: right;
+	margin: 0 80px;
+	padding-right: 50px;
+}
+
+#keywords, #date-range, #region, #order {
+	margin: 0 80px;
+	padding: 6px;
+	border-bottom: 1px #366 solid;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#search-options {
+	text-align: center;
+	margin: 0 60px;
+	padding: 2px 0;
+	border-bottom: 1px #366 solid;
+	border-top: 1px #366 solid;
+	overflow: hidden;
+}
+
+#search-options li
+{
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 4px 0 4px 12px;
+	font-size: 1.2em;
+	border-left: 1px #366 solid;
+}
+
+#search-options li:first-child {
+	border-left: none;
+	padding-left: 4px;
+}
+
+#results
+{
+	margin: 20px 60px 10px 60px;
+	padding: 20px 20px 20px 30px;
+	list-style-type: decimal;
+	list-style-position: outside;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #ccc;
+}
+
+#results a {
+	margin-right: 3px;
+}
+
+#results a.west
+{
+	color: #336;
+}
+
+#results a.nav
+{
+	color: #933;
+}
+
+strong.term1 {
+	font-weight: bold;
+}
+
+#pagination {
+	text-align: center;
+}
+
+#pagination li {
+	display: inline-block;
+	padding: 0 2px;
+}
+
+/* help pages */
+
+#help-links {
+	margin: 20px 10px;
+}
+
+#help-text {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #366;
+}
+
+#help-text h2 {
+	font-weight: bold;
+}
+
+#help-text h2 a.top-link {
+	display: block;
+	background: url(../imgs/up.gif) no-repeat 7px 7px;
+	padding: 2px 2px 7px 30px;
+	width: 60px;
+	margin-left: 20px;
+}
+
+#help-text p {
+	margin-left: 10px;
+}
